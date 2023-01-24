@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample-task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="parentDiv">
+        <div id="main_div" class="mainDiv">
+            <!-- form start from here -->
+            <form action="" name="myForm" onsubmit="return saveLoginData()" method="post"><br>
+                <h1><u>login-form</u></h1><br><br>
+                <!-- email input field -->
+                <div class="formdesign" id="email">
+                    <label for="user_email">userEmail :<br> </label> <input type="email" name="femail"
+                        autocomplete="off" placeholder="Enter your email..."><b>
+                        <div class="formError" id="emailError">
+                        </div>
+                    </b>
+                </div><br>
+                <!-- password input field -->
+                <div class="formdesign" id="password">
+                    <label for="user_password">password :<br> </label> <input type="password" name="fpassword"
+                        autocomplete="off" placeholder="Enter your password..."><b>
+                        <div class="formError" id="passError">
+                        </div>
+                    </b>
+                </div><br>
+
+                <!-- login button -->
+                <input type="submit" value="login" id="submit_btn" class="submitBtn"><br><br><br>
+            </form>
+        </div>
+    </div>
+    <!-- script file for login page -->
+    <script src="login.js"></script>
+</body>
+
+</html>

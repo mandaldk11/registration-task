@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-form</title>
+    <!-- registration form style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="parentDiv">
+        <div id="main_div" class="mainDiv">
+            <!-- form start from here -->
+            <form name="myForm" onsubmit="return validateForm()" method="post"><br>
+                <h1><u>Registration-form</u></h1><br>
+                <!-- name input field -->
+                <div class="formdesign" id="name">
+                    <label for="user_name">userName : <br></label> <input type="text" name="fname" autoFocus
+                        autocomplete="off" placeholder="Enter your name..."><b>
+                        <div class="formError" id="nameError">
+                        </div>
+                    </b>
+                </div><br>
+                <!-- email input field -->
+                <div class="formdesign" id="email">
+                    <label for="user_email">userEmail :<br> </label> <input type="email" name="femail"
+                        autocomplete="off" placeholder="Enter your email..."><b>
+                        <div class="formError" id="emailError">
+                        </div>
+                    </b>
+                </div><br>
+                <!-- mobile input field -->
+                <div class="formdesign" id="mobile">
+                    <label for="user_mobile">mobile No. :<br> </label> <input type="number" name="fmobile"
+                        autocomplete="off" placeholder="Enter your mobile no..." max="10"><b>
+                        <div class="formError" id="mobileError">
+                        </div>
+                    </b>
+                    
+                </div><br>
+                <!-- password input field -->
+                <div class="formdesign" id="password">
+                    <label for="user_password">password :<br> </label> <input type="password" name="fpassword"
+                        autocomplete="off" placeholder="Enter your password..."><b>
+                        <div class="formError" id="passError">
+                        </div>
+                    </b>
+                </div><br>
+                <!-- confirm-password input field -->
+                <div class="formdesign" id="cpassword">
+                    <label for="user_cpassword">confirm-password : <br></label> <input type="password" name="cpassword"
+                        placeholder="Enter your confirm- password..." autocomplete="off"><b>
+                        <div class="formError" id="cpassError">
+                        </div>
+                    </b>
+                </div><br>
+
+                <!-- submit button -->
+                <input type="submit" value="Register" id="submit_btn" class="submitBtn"><br><br><br>
+            </form>
+        </div>
+    </div>
+    <!-- our script for registration form -->
+    <script src="script.js"></script>
+</body>
+
+</html>
